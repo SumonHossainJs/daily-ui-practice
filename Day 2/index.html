@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="menu">
+        <li style="--i:1;--clr:#d84545;">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+        </li>
+        <li style="--i:2;--clr:#d84545;">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+        </li>
+        <li style="--i:3;--clr:#d84545;">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+        </li>
+        <li style="--i:4;--clr:#d84545;">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+        </li>
+        <div class="toggle">
+            <i class='bx bxs-share-alt'></i>
+            <i class='bx bx-x' ></i>
+        </div>
+    </div>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick=function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
