@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(1, 20, 36);
+}
+
+.container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.container .icon{
+    width: 100px;
+}
+
+.container .icon path{
+    fill: transparent;
+    stroke:white ;
+    stroke-width: .5px;
+    
+}
+
+.container .icon path
+{
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+}
+
+.container .icon:hover path
+{
+    animation: animate-heart 5s linear forwards;
+}
+
+@keyframes animate-heart {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1500;
+        fill: white;
+    }
+    80%{
+        stroke-dashoffset: 3000;
+    }
+  
+}
