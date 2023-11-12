@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        :root{
+            --dark-color: #653bff;
+            --light-color:#80e9ff;
+        }
+
+        svg{
+            cursor: pointer;
+        }
+        #Dark{
+            fill: var(--dark-color);
+        }
+        #Light{
+            fill: var(--light-color);
+        }
+        #Dark1,
+        #Dark2,
+        #Light1{
+            transition: all 1s ease;
+        }
+        #Light1{
+            transform: translateX(-55%);
+        }
+        #Dark2{
+            transform: translateX(-100%);
+        }
+
+        svg:hover  #Light1{
+            transform: translateX(-40%);
+        }
+        svg:hover #Dark1{
+            transform: translateX(50%);
+            opacity: 0;
+        }
+        svg:hover #Dark2{
+            transform: translateX(0%);
+        }
+    </style>
+  </head>
+  <body>
+    <svg
+      width="341"
+      height="168"
+      viewBox="0 0 341 168"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="Triangles">
+        <g id="Dark">
+          <path
+            id="Dark2"
+            opacity="0.4"
+            d="M134 75.3397C140.667 79.1887 140.667 88.8113 134 92.6603L38 148.086C31.3333 151.935 23 147.124 23 139.426L23 28.5744C23 20.8764 31.3333 16.0651 38 19.9141L134 75.3397Z"
+          />
+          <path
+            id="Dark1"
+            opacity="0.4"
+            d="M181 75.3397C187.667 79.1887 187.667 88.8113 181 92.6603L85 148.086C78.3333 151.935 70 147.124 70 139.426L70 28.5744C70 20.8764 78.3333 16.0651 85 19.9141L181 75.3397Z"
+          />
+        </g>
+        <g id="Light">
+          <path
+            id="Light1"
+            opacity="0.4"
+            d="M326 75.3397C332.667 79.1887 332.667 88.8113 326 92.6603L230 148.086C223.333 151.935 215 147.124 215 139.426L215 28.5744C215 20.8764 223.333 16.0651 230 19.9141L326 75.3397Z"
+          />
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>
