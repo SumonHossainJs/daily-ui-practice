@@ -74,5 +74,21 @@
         </g>
       </g>
     </svg>
+
+    <script>
+        const sVg = document.getElementById("Triangles");
+        const colors = ["red", 'orange', 'blue', 'green', 'pink', 'purple'];
+
+        const randomColor = () => colors[Math.floor(Math.random()*colors.length)];
+sVg.onclick = (e) => {
+    console.log('hello')
+    document.documentElement.style.cssText = `
+    --dark-color:${randomColor()};
+    --light-color:${randomColor()};
+
+    
+    `
+}
+    </script>
   </body>
 </html>
