@@ -4,8 +4,13 @@
     <title>Animated SVG Phone</title>
 
     <style>
+      svg{
+        height: 500px;
+        width: auto;
+      }
  #skeleton {
         animation: fadeInUp 1s;
+        
       }
 
       @keyframes fadeInUp {
@@ -22,7 +27,7 @@
 
       #bolt g {
         opacity: 0;
-        animation: dropIn 8s;
+        animation: dropIn 3s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
         animation-delay: calc(var(--order) * 200ms);
@@ -32,12 +37,12 @@
       @keyframes dropIn {
         20% {
           opacity: 0;
-          transform: translateY(-20%);
+          transform: translatex(-20%);
         }
 
         30%, 100% {
           opacity: 1;
-          transform: translateY(0);
+          transform: translatex(0);
         }
 
       }
